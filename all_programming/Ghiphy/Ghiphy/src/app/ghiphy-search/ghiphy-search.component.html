@@ -1,0 +1,14 @@
+<form action="" #ghyphySearch='ngForm' >
+    <div>
+        <label for='ghyphyForm' >Search</label>
+    <input [(ngModel)]='ngifiUrl' name='ngifiUrl' type="search">
+    <button (click)='searchThis()'>Search</button>
+    </div>
+
+</form>
+
+
+<div *ngFor='let ngifi of ngifis'>
+    <img src={{ngifi.url}} alt="">
+
+</div>
